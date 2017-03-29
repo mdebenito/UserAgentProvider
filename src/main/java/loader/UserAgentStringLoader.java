@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * Created by tf05046 on 29/03/2017.
+ * Created by Mario de Benito on 29/03/2017.
  */
 public class UserAgentStringLoader {
     private List<String> userAgentStrings;
