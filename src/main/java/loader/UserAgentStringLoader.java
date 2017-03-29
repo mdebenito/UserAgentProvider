@@ -1,7 +1,9 @@
 package loader;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -22,7 +24,7 @@ public class UserAgentStringLoader {
 
     private void loadStrings() throws FileNotFoundException {
         ClassLoader classLoader = getClass().getClassLoader();
-        File file = new File(classLoader.getResource("browserstrings.dat").getFile());
+        InputStream file = classLoader.getResourceAsStream("browserstrings.dat");
 
         Scanner scanner = new Scanner(file);
 
